@@ -17,12 +17,18 @@ class App {
 
         Scanner scanner = new Scanner(System.in);
 
-        while (true) {
-            System.out.print("입력 : ");
+        while (true){
+            System.out.print(" 입력 : ");
+            String a = scanner.nextLine();
 
-            String cmd = scanner.nextLine();
-            if (cmd.equals("종료")) break;
-
+            if (a.equals("종료")) {
+                break;
+            } else if (a.equals("등록")){
+                System.out.print("이름 :");
+                String content = scanner.nextLine();
+                System.out.print("번호 :");
+                String author = scanner.nextLine();
+            }
         }
         scanner.close();
     }

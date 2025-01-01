@@ -28,6 +28,7 @@ class App {
                 String content = scanner.nextLine();
                 System.out.print("번호 :");
                 String author = scanner.nextLine();
+                System.out.println("번호가 등록되었습니다.");
             }
         }
         scanner.close();

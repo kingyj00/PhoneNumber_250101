@@ -1,17 +1,29 @@
 package com.ll;
 
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
-public class Main {
-    public static void main(String[] args) {
-        //TIP Press <shortcut actionId="ShowIntentionActions"/> with your caret at the highlighted text
-        // to see how IntelliJ IDEA suggests fixing it.
-        System.out.printf("Hello and welcome!");
+import java.util.Scanner;
 
-        for (int i = 1; i <= 5; i++) {
-            //TIP Press <shortcut actionId="Debug"/> to start debugging your code. We have set one <icon src="AllIcons.Debugger.Db_set_breakpoint"/> breakpoint
-            // for you, but you can always add more by pressing <shortcut actionId="ToggleLineBreakpoint"/>.
-            System.out.println("i = " + i);
+public class Main {
+    public static void main (String[] args){
+        App app = new App();
+        app.run();
+    }
+}
+
+class App {
+    public void run(){
+        System.out.println(" ================");
+        System.out.println(" == 전화번호부 ==");
+        System.out.println(" ================");
+
+        Scanner scanner = new Scanner(System.in);
+
+        while (true) {
+            System.out.print("입력 : ");
+
+            String cmd = scanner.nextLine();
+            if (cmd.equals("종료")) break;
+
         }
+        scanner.close();
     }
 }

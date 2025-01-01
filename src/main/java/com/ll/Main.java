@@ -66,6 +66,13 @@ class App {
                         break;
                     }
                 }
+                if (!found) {
+                    System.out.println("해당 번호에 저장된 전화번호가 없습니다.");
+                } else {
+                    for (int i = 0; i < wiseSayings.size(); i++) {
+                        wiseSayings.get(i).id = i + 1;
+                    }
+                }
             }
         }
         scanner.close();
